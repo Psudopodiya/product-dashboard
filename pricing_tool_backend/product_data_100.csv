@@ -1,0 +1,101 @@
+product_id,name,description,cost_price,selling_price,category,stock_available,units_sold,customer_rating,demand_forecast,optimized_price
+1,Eco-Friendly Water Bottle,"A sustainable, reusable water bottle made from recycled materials.",5.0,12.99,Outdoor & Sports,500,200,4,250,11.5
+2,Wireless Earbuds,Bluetooth 5.0 wireless earbuds with noise cancellation and long battery life.,25.0,59.99,Electronics,300,150,5,180,55.0
+3,Organic Cotton T-Shirt,"Soft, breathable t-shirt made from 100% organic cotton.",8.0,19.99,Apparel,400,100,4,120,18.5
+4,Smart Home Hub,Control all your smart home devices with this central hub.,40.0,99.99,Home Automation,150,75,4,90,95.0
+5,Electric Scooter,Lightweight electric scooter with a range of 20 miles.,150.0,299.99,Transportation,80,40,5,50,285.0
+6,Noise-Canceling Headphones,Over-ear headphones with active noise cancellation.,50.0,129.99,Electronics,200,90,4,110,125.0
+7,Smartwatch,Feature-packed smartwatch with heart rate monitor and GPS.,70.0,149.99,Wearables,250,130,5,160,145.0
+8,Portable Solar Charger,Compact solar charger for outdoor use.,20.0,39.99,Outdoor & Sports,300,140,4,170,38.0
+9,Fitness Tracker,Wearable fitness tracker with sleep monitoring.,30.0,59.99,Wearables,350,180,4,200,57.0
+10,Bluetooth Speaker,Portable Bluetooth speaker with excellent sound quality.,15.0,45.99,Electronics,400,210,4,240,43.0
+11,Insulated Hiking Flask,Durable flask to keep drinks hot or cold during hikes.,6.5,14.99,Outdoor & Sports,420,180,4,230,13.5
+12,Smart LED Bulb,WiFi-enabled LED bulb controllable via app.,12.0,29.99,Home Automation,260,120,5,140,27.0
+13,Yoga Tights,Flexible and breathable yoga tights for workouts.,9.5,24.99,Apparel,370,160,4,180,22.5
+14,Foldable Helmet,Compact helmet ideal for scooter riders.,35.0,89.99,Transportation,90,55,4,70,84.0
+15,UV Protection Shirt,Lightweight shirt with built-in UV protection.,10.0,25.99,Apparel,300,100,4,120,24.0
+16,Wireless Charging Pad,Fast-charging pad compatible with all Qi devices.,18.0,39.99,Electronics,240,130,5,160,36.5
+17,GPS Running Watch,Smartwatch with GPS tracking and distance monitor.,60.0,139.99,Wearables,210,125,4,150,130.0
+18,LED Camping Lantern,Rechargeable lantern ideal for camping trips.,15.0,35.99,Outdoor & Sports,280,100,4,150,32.0
+19,Home Security Camera,Indoor/outdoor security camera with motion detection.,45.0,109.99,Home Automation,130,70,4,85,102.0
+20,Foldable Electric Bike,Compact e-bike for urban commuting.,300.0,649.99,Transportation,50,20,5,40,620.0
+21,Running Shorts,Moisture-wicking shorts for fitness training.,6.0,17.99,Apparel,380,190,4,220,16.5
+22,Wireless Soundbar,Slim soundbar with Bluetooth and HDMI support.,48.0,119.99,Electronics,210,110,5,130,113.0
+23,Fitness Smart Ring,Health tracking ring with sleep and step counter.,30.0,74.99,Wearables,190,95,4,115,70.0
+24,Waterproof Duffel Bag,Rugged bag for sports and outdoor activities.,25.0,59.99,Outdoor & Sports,240,105,4,130,56.0
+25,Smart Light Strip,Color-changing light strip with app control.,14.0,34.99,Home Automation,220,90,4,110,32.5
+26,Electric Skateboard,Motorized skateboard with wireless control.,180.0,359.99,Transportation,60,30,5,45,340.0
+27,Tech Fleece Hoodie,Warm hoodie with built-in earbud pass-through.,20.0,49.99,Apparel,320,150,4,180,46.0
+28,Mini Projector,Portable projector for home and travel use.,55.0,129.99,Electronics,180,85,4,105,125.0
+29,Touchscreen Gloves,Winter gloves compatible with smartphones.,7.0,16.99,Apparel,290,120,4,140,15.5
+30,Outdoor GPS Device,Handheld GPS tracker for hiking and travel.,50.0,119.99,Outdoor & Sports,110,60,4,80,112.0
+31,Smart Door Lock,Keyless smart lock with mobile control.,60.0,149.99,Home Automation,100,50,4,75,140.0
+32,Helmet with Visor,Protective helmet with flip-down visor.,32.0,84.99,Transportation,85,40,5,55,80.0
+33,Running Tank Top,Breathable tank top for hot weather workouts.,5.0,14.99,Apparel,310,140,4,170,13.5
+34,Wireless Keyboard,Compact Bluetooth keyboard with backlight.,18.0,39.99,Electronics,250,130,4,160,38.0
+35,Fitness Headband,Moisture-absorbing headband for training.,4.0,9.99,Apparel,330,110,4,130,9.0
+36,Outdoor Picnic Blanket, Foldable waterproof picnic mat.,10.0,24.99,Outdoor & Sports,270,100,4,120,23.0
+37,Smart Plug,Remote controlled plug with scheduling feature.,11.0,25.99,Home Automation,200,85,4,100,24.0
+38,Electric Unicycle,Compact rideable with balance controls.,280.0,599.99,Transportation,30,15,5,25,570.0
+39,Training Jacket,Wind-resistant jacket for outdoor sports.,22.0,54.99,Apparel,300,135,4,160,51.0
+40,Portable Monitor,USB-C enabled portable screen for work.,90.0,199.99,Electronics,170,80,4,95,190.0
+41,Hybrid Smartwatch,Stylish analog smartwatch with step tracking.,55.0,119.99,Wearables,210,100,4,130,112.0
+42,Trekking Backpack,Multi-compartment backpack with hydration support.,35.0,79.99,Outdoor & Sports,180,90,4,110,75.0
+43,Voice Assistant Speaker,AI-powered smart home speaker.,38.0,89.99,Home Automation,160,70,4,95,85.0
+44,Electric Kick Scooter,Foldable kick scooter with throttle and brake.,140.0,299.99,Transportation,70,35,5,50,280.0
+45,Cotton Polo Shirt,Casual polo made from 100% cotton.,9.0,22.99,Apparel,320,140,4,160,21.0
+46,Bluetooth Tracker,Attachable tracker for keys or wallet.,12.0,29.99,Electronics,250,120,5,140,28.0
+47,Advanced Health Band,Fitness band with blood oxygen and heart monitor.,32.0,74.99,Wearables,200,110,4,130,70.0
+48,Camping Cook Set,Portable outdoor cooking kit.,18.0,39.99,Outdoor & Sports,190,90,4,100,37.0
+49,Motion Sensor Light,Automatic light for hallways and closets.,10.0,24.99,Home Automation,220,100,4,120,23.0
+50,Electric Bike,Pedal-assist e-bike with LCD display.,310.0,699.99,Transportation,40,20,5,35,680.0
+51,Sports Cap,UV-protective cap for workouts.,6.0,14.99,Apparel,280,130,4,150,13.5
+52,USB-C Hub,Multiport hub with HDMI and SD card reader.,20.0,44.99,Electronics,240,110,4,130,42.0
+53,Wellness Ring,Minimalist ring with stress tracking.,28.0,69.99,Wearables,180,90,4,110,66.0
+54,Waterproof Tent,2-person tent with quick setup design.,45.0,99.99,Outdoor & Sports,120,60,4,80,92.0
+55,Smart Thermostat,WiFi-connected thermostat with app controls.,50.0,124.99,Home Automation,140,70,4,90,118.0
+56,Motorized Hoverboard,Self-balancing hoverboard for commuting.,160.0,349.99,Transportation,55,25,5,40,335.0
+57,Performance Leggings,Seamless leggings for gym workouts.,12.0,27.99,Apparel,290,150,4,170,26.0
+58,Mini Bluetooth Mouse,Portable wireless mouse for laptops.,10.0,24.99,Electronics,260,120,4,140,23.0
+59,Smart Fitness Scale,Bluetooth scale with body composition analysis.,22.0,49.99,Wearables,170,90,4,110,47.0
+60,Camping Tent Lamp,Rechargeable LED light for tents.,9.0,21.99,Outdoor & Sports,230,110,4,130,20.0
+61,Smart Light Dimmer,Wall-mounted dimmer with app integration.,13.0,29.99,Home Automation,200,85,4,105,28.0
+62,Electric Ride Board,Longboard with wireless controller.,200.0,449.99,Transportation,45,20,5,35,430.0
+63,Sports Jacket,All-weather zip-up jacket for runners.,25.0,59.99,Apparel,310,150,4,180,56.0
+64,Bluetooth Adapter,Turn any device wireless with this adapter.,8.0,17.99,Electronics,280,130,4,150,17.0
+65,Smart Health Watch,Heart and oxygen monitoring smartwatch.,48.0,109.99,Wearables,190,90,4,120,104.0
+66,Hiking Pole Set,Adjustable aluminum trekking poles.,20.0,45.99,Outdoor & Sports,160,80,4,95,42.0
+67,Indoor Air Sensor,Air quality monitor with alerts.,35.0,84.99,Home Automation,150,70,4,90,80.0
+68,City E-Bike,Efficient electric bike for urban use.,320.0,699.99,Transportation,50,25,5,40,670.0
+69,Gym Tank Top,Sleeveless training top with quick-dry fabric.,6.5,15.99,Apparel,330,160,4,180,15.0
+70,Wireless Gaming Controller,Compatible with all major platforms.,30.0,69.99,Electronics,210,100,4,125,66.0
+71,Fitness Clip Tracker,Clip-on device for step and calorie tracking.,14.0,32.99,Wearables,250,120,4,140,30.0
+72,Outdoor Sleeping Bag,All-season sleeping bag with compression sack.,25.0,59.99,Outdoor & Sports,200,95,4,110,57.0
+73,Smart Switch Panel,Multi-gang smart switch for home lighting.,17.0,39.99,Home Automation,180,90,4,105,37.0
+74,Off-Road Scooter,High-torque scooter for rough terrains.,250.0,529.99,Transportation,60,30,5,50,510.0
+75,Casual Hoodie,Fleece-lined hoodie for daily wear.,15.0,34.99,Apparel,290,140,4,160,32.0
+76,USB Charging Station,6-port fast charging block.,18.0,39.99,Electronics,260,130,4,150,38.0
+77,Sleep Monitoring Band,Lightweight tracker for sleep patterns.,20.0,44.99,Wearables,230,110,4,130,42.0
+78,Adventure Tent,Spacious tent for family camping.,55.0,119.99,Outdoor & Sports,100,50,4,70,115.0
+79,Motion Detector Alarm,Battery-operated home entry alarm.,14.0,29.99,Home Automation,190,90,4,110,28.0
+80,Electric Urban Bike,Sleek design electric bike for city travel.,330.0,749.99,Transportation,40,20,5,35,730.0
+81,Compression Shorts,Workout shorts with muscle support.,8.0,18.99,Apparel,280,130,4,150,17.5
+82,Portable Bluetooth Receiver,Turn speakers wireless.,11.0,24.99,Electronics,250,120,4,140,23.0
+83,Health Monitor Watch,Tracks pulse  sleep and steps.,35.0,79.99,Wearables,200,100,4,120,75.0
+84,Trekking Hammock,Lightweight hammock with tree straps.,22.0,49.99,Outdoor & Sports,210,100,4,120,47.0
+85,WiFi Security Sensor,Window/door sensor with mobile alerts.,10.0,24.99,Home Automation,230,110,4,130,23.0
+86,Electric Trail Bike,Durable e-bike for mountain terrain.,350.0,799.99,Transportation,35,18,5,30,770.0
+87,Zip Hoodie,Comfortable hoodie with secure pockets.,18.0,39.99,Apparel,270,140,4,160,37.5
+88,Wireless HDMI Dongle,Stream content wirelessly to TVs.,25.0,59.99,Electronics,240,120,4,150,56.0
+89,Pro Fitness Band,Advanced health tracking band.,28.0,64.99,Wearables,210,100,4,125,61.0
+90,Outdoor Stove Kit,Compact camp stove and pot combo.,30.0,69.99,Outdoor & Sports,150,70,4,90,66.0
+91,Digital Thermostat,Touchscreen-enabled programmable unit.,45.0,104.99,Home Automation,160,80,4,100,100.0
+92,Folding Commuter Bike,Compact for public transport rides.,220.0,479.99,Transportation,55,25,5,45,460.0
+93,Stretch Workout Pants,Soft gym pants with elastic fit.,10.0,22.99,Apparel,310,150,4,170,21.0
+94,Wireless Presentation Clicker,Ideal for remote slide control.,15.0,34.99,Electronics,230,110,4,130,33.0
+95,Slim Health Watch,Minimal design with sleep tracking.,32.0,74.99,Wearables,200,100,4,120,72.0
+96,Inflatable Sleeping Pad,Comfortable sleeping solution for campers.,22.0,49.99,Outdoor & Sports,170,80,4,100,47.0
+97,Smart Window Blinds,App-controlled blinds with scheduler.,65.0,149.99,Home Automation,140,70,4,90,140.0
+98,Electric Folding Scooter,Portable and rechargeable urban scooter.,270.0,599.99,Transportation,45,22,5,38,580.0
+99,Cotton Sweatshirt,Casual wear for everyday use.,12.0,27.99,Apparel,290,140,4,160,26.0
+100,Bluetooth Car Adapter,Hands-free calling and music via FM.,17.0,39.99,Electronics,250,120,4,145,38.0
