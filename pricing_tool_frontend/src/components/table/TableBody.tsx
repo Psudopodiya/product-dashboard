@@ -8,6 +8,7 @@ import {
 } from "@/utils/format-utils";
 import { Eye, Pencil, Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { CustomPagination } from "./CustomPagination";
 
 import {
   PRICING_TABLE_HEADERS,
@@ -300,6 +301,7 @@ export default function ProductGrid({
 
       {/* Bottom Buttons for global Save and Cancel */}
       <div className="flex gap-4 mt-2 justify-end">
+        <CustomPagination />
         <Button
           onClick={handleCancel}
           variant="outline"

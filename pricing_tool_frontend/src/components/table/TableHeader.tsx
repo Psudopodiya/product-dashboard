@@ -1,8 +1,8 @@
+import { useProductStore } from "@/store/productStore";
 import { Product } from "@/types/types";
 import { BarChartBigIcon, Filter, Plus, Search } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useProductStore } from "@/store/productStore";
 
 import {
   AddProductDialog,
@@ -35,27 +35,21 @@ export default function TableHeader({
   onToggleDemandColumn,
   isDemandColumnVisible,
 }: TableHeaderProps) {
-
-  const {fetchProducts} = useProductStore();
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const { fetchProducts, filters, setFilters } = useProductStore();
+  // const [searchQuery, setSearchQuery] = useState("");
+  // const [selectedCategory, setSelectedCategory] = useState("all");
   const [isAddProductOpen, setIsAddProductOpen] = useState(false);
   const [isDemandForecastOpen, setIsDemandForecastOpen] = useState(false);
 
   const handleDataFilter = () => {
-    console.log("Filtering data...");
-    console.log(`Search Query: ${searchQuery}, Category: ${selectedCategory}`);
-    fetchProducts(searchQuery, selectedCategory);
+    fetchProducts(filters.searchQuery, filters.category);
   };
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log("TableHeader mounted");
     return () => {
-      console.log("TableHeader unmounted");
       // Cleanup on unmount
-      setSearchQuery("");
-      setSelectedCategory("all");
+      setFilters("", "all");
     };
   }, []);
 
@@ -105,7 +99,7 @@ export default function TableHeader({
           <Input
             placeholder="Search"
             className="w-[180px] text-xs h-8 bg-transparent border-none  placeholder:text-gray-400"
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => setFilters(e.target.value, filters.category)}
           />
         </div>
 
@@ -114,7 +108,7 @@ export default function TableHeader({
           <span className="text-muted-foreground">Category :</span>
           <Select
             value="all"
-            onValueChange={(value) => setSelectedCategory(value)}
+            onValueChange={(value) => setFilters(filters.searchQuery, value)}
           >
             <SelectTrigger className="w-[160px] h-8 bg-transparent  border-[#01e0b4]">
               <SelectValue placeholder="Stationary" />

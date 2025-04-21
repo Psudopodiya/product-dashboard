@@ -23,7 +23,6 @@ function Table({ tableHeader, variant }: TableProps) {
       setSelectedProducts((prev) => prev.filter((p) => p.id !== product.id));
     }
   };
-
   const handleSelectAll = (isSelected: boolean) => {
     if (isSelected) {
       setSelectedProducts(products);
@@ -34,12 +33,11 @@ function Table({ tableHeader, variant }: TableProps) {
 
   useEffect(() => {
     // component mount call
-    console.log("Table mounted");
+
     fetchProducts("", "all");
     return () => {
       // component unmount call
-      console.log("Table unmounted");
-    }
+    };
   }, []);
 
   return (
@@ -52,21 +50,21 @@ function Table({ tableHeader, variant }: TableProps) {
         isDemandColumnVisible={isDemandColumnVisible}
       />
       <div className="flex-1 overflow-hidden px-4">
-      {loading ? (
+        {loading ? (
           <div>Loading products…</div>
         ) : error ? (
           <div>Error: {error}</div>
-        ) :(
-        <TableBody
-          variant={variant}
-          data={products}
-          // data={filteredData}
-          selectedProducts={selectedProducts}
-          setSelectedProducts={setSelectedProducts}
-          onProductSelect={handleProductSelect}
-          onSelectAll={handleSelectAll}
-          isDemandColumnVisible={isDemandColumnVisible}
-        />
+        ) : (
+          <TableBody
+            variant={variant}
+            data={products}
+            // data={filteredData}
+            selectedProducts={selectedProducts}
+            setSelectedProducts={setSelectedProducts}
+            onProductSelect={handleProductSelect}
+            onSelectAll={handleSelectAll}
+            isDemandColumnVisible={isDemandColumnVisible}
+          />
         )}
       </div>
     </div>
