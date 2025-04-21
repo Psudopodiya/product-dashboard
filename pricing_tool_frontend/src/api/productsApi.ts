@@ -3,15 +3,23 @@ import { Product } from "@/types/types";
 import axiosClient from "./axiosClient";
 import { StandardResponse, extractResponseData } from "@/utils/apiUtils";
 
+interface PaginatedResponse {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: Product[];
+}
+
 export const productsApi = {
-  getAllProducts: async (name:string, category:string): Promise<Product[]> => {
-    const response = await axiosClient.get<StandardResponse<Product[]>>("/products/", {
+  getAllProducts: async (name:string, category:string, page:number=1): Promise<PaginatedResponse> => {
+    const response = await axiosClient.get<StandardResponse<PaginatedResponse>>("/products/", {
       params: {
         name: name,
-        category: category
+        category: category,
+        page: page
       }
     });
-    return response.data.data || [];
+    return extractResponseData(response);
   },
 
   addProduct: async (product: Omit<Product, "id">): Promise<Product> => {
