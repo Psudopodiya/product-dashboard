@@ -4,6 +4,7 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 from utils.api_utils import success_response
 from utils.pagination import StandardResultPagination
+from utils.api_utils import validation_error_response
 
 from .models import Product
 from .serializers import ProductSerializer
