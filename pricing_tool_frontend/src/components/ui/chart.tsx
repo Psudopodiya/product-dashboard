@@ -23,6 +23,8 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
   const chartRef = useRef<HTMLCanvasElement>(null);
   const chartInstance = useRef<Chart | null>(null);
 
+  console.log(products);
+
   useEffect(() => {
     if (chartRef.current && products.length > 0) {
       const chartData = products
@@ -38,6 +40,9 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
         chartInstance.current.destroy();
       }
 
+      const priceColor = "rgba(0, 255, 213, 1)";
+      const demandColor = "rgba(149, 76, 233, 1)";
+
       const config: ChartConfiguration<"line"> = {
         type: "line",
         data: {
@@ -46,8 +51,8 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
             {
               label: "Selling Price ($)",
               data: chartData.map((d) => d.price),
-              backgroundColor: "rgba(54, 162, 235, 0.5)",
-              borderColor: "rgba(54, 162, 235, 1)",
+              backgroundColor: priceColor,
+              borderColor: priceColor,
               borderWidth: 2,
               yAxisID: "y",
               tension: 0.1,
@@ -55,8 +60,8 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
             {
               label: "Demand Forecast (units)",
               data: chartData.map((d) => d.demand),
-              backgroundColor: "rgba(255, 99, 132, 0.5)",
-              borderColor: "rgba(255, 99, 132, 1)",
+              backgroundColor: demandColor,
+              borderColor: demandColor,
               borderWidth: 2,
               yAxisID: "y1",
               tension: 0.1,
@@ -71,6 +76,8 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
               display: true,
               text: "Price vs Demand Analysis",
               font: { size: 18 },
+              color: "rgba(220, 220, 220, 1)", // Light grey for title
+              padding: { bottom: 10 },
             },
             tooltip: {
               callbacks: {
@@ -89,8 +96,30 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
                 },
               },
             },
+            legend: {
+              position: "bottom",
+              labels: {
+                color: "rgba(220, 220, 220, 1)", // Light grey for legend labels
+                usePointStyle: true,
+                padding: 20,
+                pointStyle: "circle",
+                borderRadius: 5,
+                boxHeight: 5,
+              },
+            },
           },
           scales: {
+            x: {
+              ticks: {
+                color: "rgba(220, 220, 220, 1)", // Light grey for x-axis ticks
+              },
+              grid: {
+                color: "rgba(100, 100, 100, 0.3)", // Darker grey for x-axis grid
+              },
+              border: {
+                color: "rgba(150, 150, 150, 0.8)", // Medium grey for x-axis line
+              },
+            },
             y: {
               type: "linear",
               display: true,
@@ -99,12 +128,20 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
                 display: true,
                 text: "Price ($)",
                 font: { weight: "bold" },
+                color: "rgba(220, 220, 220, 1)", // Light grey for y-axis title
               },
               min: 0,
               max: 500,
               ticks: {
                 callback: (value) => `$${value}`,
                 stepSize: 50,
+                color: "rgba(220, 220, 220, 1)", // Light grey for y-axis ticks
+              },
+              grid: {
+                color: "rgba(100, 100, 100, 0.3)", // Darker grey for y-axis grid
+              },
+              border: {
+                color: "rgba(150, 150, 150, 0.8)", // Medium grey for y-axis line
               },
             },
             y1: {
@@ -115,9 +152,19 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
                 display: true,
                 text: "Demand (units)",
                 font: { weight: "bold" },
+                color: "rgba(220, 220, 220, 1)", // Light grey for y1-axis title
               },
               min: 0,
-              grid: { drawOnChartArea: false },
+              grid: {
+                drawOnChartArea: false,
+                color: "rgba(100, 100, 100, 0.3)", // Darker grey for y1-axis grid
+              },
+              ticks: {
+                color: "rgba(220, 220, 220, 1)", // Light grey for y1-axis ticks
+              },
+              border: {
+                color: "rgba(150, 150, 150, 0.8)", // Medium grey for y1-axis line
+              },
             },
           },
         },
@@ -134,7 +181,7 @@ const DemandPriceChart = ({ products }: DemandPriceChartProps) => {
   }, [products]);
 
   return (
-    <div className="w-full mb-4 h-[300px]">
+    <div className="w-full mb-4 h-[300px] bg-black rounded-lg py-2">
       <canvas ref={chartRef} />
     </div>
   );

@@ -20,9 +20,6 @@ import {
 interface TableHeaderProps {
   variant: "product" | "pricing";
   title: string;
-  // setSearchQuery: (value: string) => void;
-  // onCategoryChange: (value: string) => void;
-  // onFilter: () => void;
   selectedProducts: Product[];
   onToggleDemandColumn: () => void;
   isDemandColumnVisible: boolean;
@@ -36,8 +33,6 @@ export default function TableHeader({
   isDemandColumnVisible,
 }: TableHeaderProps) {
   const { fetchProducts, filters, setFilters } = useProductStore();
-  // const [searchQuery, setSearchQuery] = useState("");
-  // const [selectedCategory, setSelectedCategory] = useState("all");
   const [isAddProductOpen, setIsAddProductOpen] = useState(false);
   const [isDemandForecastOpen, setIsDemandForecastOpen] = useState(false);
 
@@ -60,15 +55,13 @@ export default function TableHeader({
         <Button
           onClick={() => navigate(-1)}
           variant="ghost"
-          size="sm"
-          className="flex items-center text-[#01e0b4] cursor-pointer"
+          size="xxs"
+          className="flex items-center text-[#01e0b4] cursor-pointer text-xs"
         >
           {"<<"} Back
         </Button>
-
         <div className="border-l border-gray-600 h-5" />
-
-        <h2 className=" text-base font-semibold whitespace-nowrap">{title}</h2>
+        <h2 className="text-sm font-semibold whitespace-nowrap">{title}</h2>
       </div>
 
       {/* Middle Section */}
@@ -78,6 +71,7 @@ export default function TableHeader({
             id="forecast-toggle"
             checked={isDemandColumnVisible}
             onCheckedChange={onToggleDemandColumn}
+            size="sm"
           />
           <label htmlFor="forecast-toggle" className="text-xs">
             With Demand Forecast
@@ -90,7 +84,7 @@ export default function TableHeader({
           {/* <Search className="text-[#01e0b4] hover:text-white"/>  */}
           <Button
             variant="ghost"
-            size="sm"
+            size="xxs"
             className="p-0 h-6 text-[#01e0b4] hover:bg-white"
             onClick={() => handleDataFilter()}
           >
@@ -125,11 +119,11 @@ export default function TableHeader({
         {/* Filter Button */}
         <Button
           variant="outline"
-          size="sm"
+          size="xxs"
           className="ml-4 h-9 border-[#01e0b4] text-xs px-4"
           onClick={() => handleDataFilter()}
         >
-          <Filter className="w-2 h-2" />
+          <Filter />
           Filter
         </Button>
       </div>
@@ -141,18 +135,18 @@ export default function TableHeader({
           <div className="flex items-center gap-2 text-black">
             <Button
               variant="outline"
-              size="sm"
-              className="h-9 bg-[#01e0b4] text-xs"
+              size="xxs"
+              className="bg-[#01e0b4] text-xs py-4"
               onClick={() => setIsAddProductOpen(true)}
             >
-              <Plus className="w-2 h-2" />
+              <Plus />
               Add New Product
             </Button>
 
             <Button
               variant="outline"
               size="sm"
-              className="h-9 bg-[#01e0b4] text-xs"
+              className="bg-[#01e0b4] text-xs py-4"
               onClick={() => {
                 if (selectedProducts.length === 0) {
                   alert(

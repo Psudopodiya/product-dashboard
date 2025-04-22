@@ -11,8 +11,6 @@ import { getPaginationText } from "@/utils/format-utils";
 export function CustomPagination() {
   const { pagination, fetchProducts, filters } = useProductStore();
   const { currentPage, pageSize, count, previous, next } = pagination;
-  console.log("CustomPagination >>>", pagination);
-
   const handlePageChange = (page: number) => {
     fetchProducts(filters.searchQuery, filters.category, page);
   };

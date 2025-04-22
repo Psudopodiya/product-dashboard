@@ -2,7 +2,7 @@ import type { Product } from "@/types/types";
 import Chart from "chart.js/auto";
 import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from "./";
+import { Dialog, DialogContent, DialogTitle } from "./";
 import DemandPriceChart from "./chart";
 
 interface DemandForecastDialogProps {
@@ -149,19 +149,15 @@ export function DemandForecastDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-[#242424] p-0 border-none text-white min-w-[80%] min-h-[90%]">
+      <DialogContent className="bg-[#242424] p-0 border-none text-white min-w-[80%]">
         <DialogTitle className="sr-only">Demand Forecast</DialogTitle>
-        <DialogDescription className="sr-only">
-          Forecasted demand vs selling price chart for selected products.
-        </DialogDescription>
-
         <div className="bg-black w-full flex items-center justify-between px-6 py-4">
           <h2 className="text-white text-xl font-semibold">Demand Forecast</h2>
           <button
             onClick={() => onOpenChange(false)}
-            className="text-red-500 hover:text-red-400 focus:outline-none"
+            className="bg-red-500 text-black hover:text-white focus:outline-none rounded-full"
           >
-            <X size={24} />
+            <X size={20} />
           </button>
         </div>
 

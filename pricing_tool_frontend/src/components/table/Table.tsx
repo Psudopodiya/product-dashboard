@@ -58,7 +58,6 @@ function Table({ tableHeader, variant }: TableProps) {
           <TableBody
             variant={variant}
             data={products}
-            // data={filteredData}
             selectedProducts={selectedProducts}
             setSelectedProducts={setSelectedProducts}
             onProductSelect={handleProductSelect}
